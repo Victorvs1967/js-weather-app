@@ -1,5 +1,3 @@
-// api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={APIkey}
-
 const form = document.querySelector('.top-banner form'),
       input = document.querySelector('.top-banner input'),
       msg = document.querySelector('.top-banner .msg'),
