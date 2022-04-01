@@ -67,7 +67,7 @@ body {
 }
 
 .heading {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 4rem;
   letter-spacing: 0.02em;
   padding: 0 0 30px 0;
@@ -87,7 +87,10 @@ body {
 }
 
 .top-banner form input::placeholder {
-  color: currentColor; 
+  color: currentColor;
+  font-size: 1.8rem;
+  font-weight: 200;
+  opacity: .3;
 }
 
 .top-banner form button {
@@ -111,6 +114,16 @@ body {
   left: 0;
   max-width: 450px;
   min-height: 40px;
+}
+
+#reset {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
 }
 
 /* section #2 */

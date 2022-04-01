@@ -1,7 +1,8 @@
 const form = document.querySelector('.top-banner form'),
       input = document.querySelector('.top-banner input'),
       msg = document.querySelector('.top-banner .msg'),
-      list = document.querySelector('.ajax-section .cities');
+      list = document.querySelector('.ajax-section .cities'),
+      reset = document.querySelector('.top-banner #reset');
 
 const viewWeather = apiKey => {
   form.addEventListener('submit', event => {
@@ -45,3 +46,5 @@ fetch('./data.json') // apiKey from data.json
   .then(data => data.json())
   .then(result => result.apiKey)
   .then(apiKey => viewWeather(apiKey));
+
+reset.addEventListener('click', () => document.location.reload());
